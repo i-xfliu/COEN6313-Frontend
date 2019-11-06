@@ -18,5 +18,5 @@ RUN mkdir -p /var/log/app_engine
 # to be explicit.
 
 # Finally, all static assets.
-ADD COEN6313-Frontend/assignment
+ADD assignment/ COEN6313-Frontend/assignment
 RUN chmod -R a+r /usr/COEN6313-Frontend/assignment/html
