@@ -19,5 +19,4 @@ RUN mkdir -p /var/log/app_engine
 # to be explicit.
 
 # Finally, all static assets.
-ADD html/ /usr/share/nginx/html/
 RUN chmod -R a+r /usr/share/nginx/www
