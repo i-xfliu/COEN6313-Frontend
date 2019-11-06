@@ -6,6 +6,7 @@ FROM nginx
 # importantly, it ensure nginx listens on port 8080. Google App Engine expects
 # the runtime to respond to HTTP requests at port 8080.
 COPY nginx.conf /etc/nginx/nginx.conf
+COPY assignment/ /usr/share/nginx/html/
 
 # create log dir configured in nginx.conf
 RUN mkdir -p /var/log/app_engine
@@ -20,5 +21,5 @@ RUN mkdir -p /usr/share/COEN6313-Frontend/assignment/_ah && \
     echo "healthy" > /usr/share/COEN6313-Frontend/assignment/health
 
 # Finally, all static assets.
-ADD assignment/ /usr/share/nginx/assignment/
-RUN chmod -R a+r /usr/share/nginx/assignment/
+ADD html/ /usr/share/nginx/html/
+RUN chmod -R a+r /usr/share/nginx/www
