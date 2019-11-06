@@ -1,0 +1,22 @@
+{
+  "RFW_ID": "jf3458rw-3rjdc134fr-a1eif03r52",
+  "last_batch_ID": "4",
+  "workload_data": [
+    [
+      {
+        "NetworkIn_Average": 260661198
+      },
+      {
+        "NetworkIn_Average": 280470095
+      }
+    ],
+    [
+      {
+        "NetworkIn_Average": 220661198
+      },
+      {
+        "NetworkIn_Average": 280370095
+      }
+    ]
+  ]
+}
