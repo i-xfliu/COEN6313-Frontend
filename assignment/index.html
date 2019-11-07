@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link type="text/css" href="../css/theme.css" rel="stylesheet">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Data Request</title>
+
+  <!-- Styles -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Poppins:400,600" rel="stylesheet">
+
+
+  <!-- favicon and touch icons -->
+  <link rel="shortcut icon" href="assets/images/favicon.png" >
+
+  <!-- Bootstrap -->
+  <link href="./plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="./css/bootstrap.css" rel="stylesheet">
+
+</head>
+<body class="listing-template">
+</header><div id="site-banner" class="text-center clearfix">
+  <div class="container">
+    <h1 class="title wow slideInLeft">DATAFRAME REQUEST</h1>
+  </div>
+</div>
+<div id="advance-search" class="main-page clearfix">
+  <div class="container">
+    <button class="btn top-btn">Choose Your Data</button>
+    <form action="#" id="adv-search-form" class="clearfix">
+      <fieldset>
+        <input type="text" name="batch-unit" id="property-batch-unit" placeholder="Batch Unit">
+        <input type="text" name="batch-id" id="property-batch-id" placeholder="Batch ID">
+        <input type="text" name="batch-size" id="property-batch-size" placeholder="Batch Size">
+        <select name="branch" id="main-branch">
+          <option value="">Benchmark</option>
+          <option value="dell"> Dell </option>
+          <option value="netflix"> Netflix</option>
+        </select>
+        <select name="sub-type" id="property-dataset-type">
+          <option value="">Dataset Type</option>
+          <option value="testing">Testing</option>
+          <option value="training">Training</option>
+        </select>
+        <select id="workload-metric" name="metric">
+          <option value="">Workload Metric</option>
+          <option value="cpu"> CPU</option>
+          <option value="netrworkin"> NetworkIn</option>
+          <option value="networkout"> NetworkOut</option>
+          <option value="memory"> Memory</option>
+        </select>
+      </fieldset>
+      <button id="submit_btn" type="submit" class="btn btn-default btn-lg text-center">Search <br class="hidden-sm hidden-xs"> Data</button>
+    </form>
+  </div>
+</div>    <section id="property-listing">
+
+</section>
+
+<a href="#top" id="scroll-top"><i class="fa fa-angle-up"></i></a>
+<script src="./js/vendor/jquery-3.4.1.min.js"></script>
+<script src="./js/request.js"></script>
+<script src="//cdn.rawgit.com/dcodeIO/protobuf.js/6.8.8/dist/protobuf.js"></script>
+</body>
+</html>
