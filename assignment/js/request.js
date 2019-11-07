@@ -6,8 +6,8 @@ window.onload = function () {
   return false;
   });
 }
-var url_json = "http://127.0.0.1:4800/v1/batches/json";
-var url_protcol = "http://127.0.0.1:4800/v1/batches/proto";
+var url_json = "http://10.162.0.2:4800/v1/batches/json";
+var url_protcol = "http://10.162.0.2:4800/v1/batches/proto";
 var RFW_ID = "jf3458rw-3rjdc134fr-a1eif03r52";
 
 
