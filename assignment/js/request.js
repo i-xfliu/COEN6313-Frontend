@@ -3,6 +3,7 @@ window.onload = function () {
   // var $button = document.querySelector('.button');
   $button.on('click', function () {
     sendRequest();
+    return false;
   });
 }
 var url_json = "http://127.0.0.1:4800/v1/batches/json";
