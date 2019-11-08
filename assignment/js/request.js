@@ -89,20 +89,19 @@ var sendRequest = function() {
       },
       success: function(data, textStatus, jqXHR) {
         if(data.RFW_ID == RFW_ID) {
-          let words = "Repsonse is： ";
+          let words = "";
           const last_batch_id = data.last_batch_ID;
           const workload_metrics = data.workload_metrics;
-          words = words + "Last Batch ID: "+last_batch_id+"workLoad Metrics: "+workload_metrics+
-            "Data Frame Example(1st Batch): ";
+          words = words + "Last Batch ID:   "+last_batch_id+"    workLoad Metrics:   "+workload_metrics+
+            "  Data Frame Example ( 1st Batch ):  ";
           var array = data.workload_data;
           var first_array = array[0];
           for(i = 0; i < first_array.length; i++){
-            words = words + first_array[i];
+            words = words + " ; "+first_array[i];
           }
-
+         $('#textarea').text(words);
           }
       },
       dataType:"json"
     });
-  // }
 }
